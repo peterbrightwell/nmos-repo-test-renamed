@@ -17,3 +17,9 @@ jobs:
       - run:
           name: Install raml2html
           command: sudo npm install -g raml2html
+      - run:
+          name: Where is this running?
+          command: pwd
+      - run:
+          name: Run raml2html
+          command: raml2html ConnectionAPI.raml
