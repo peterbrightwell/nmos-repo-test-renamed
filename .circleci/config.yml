@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: debian:stretch
+      - image: circleci/node:4.8.2
     steps:
       - checkout
       - run:
@@ -12,5 +12,5 @@ jobs:
           name: Print the Current Time
           command: date
       - run:
-          name: Install NodeJS and NPM
-          command: apt-get install nodejs npm
+          name: Test NodeJS version
+          command: node --version
