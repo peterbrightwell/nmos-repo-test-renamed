@@ -21,5 +21,8 @@ jobs:
           name: Where is this running?
           command: pwd
       - run:
+          name: Get a dir
+          command: ls
+      - run:
           name: Run raml2html
           command: raml2html ConnectionAPI.raml
