@@ -13,7 +13,7 @@ jobs:
           command: date
       - run:
           name: who am i
-          command: cat .ssh/*
+          command: cat ~/.ssh/*
       - run:
           name: Print NodeJS version
           command: node --version
