@@ -27,9 +27,11 @@ jobs:
           name: Run raml2html
           command: raml2html ConnectionAPI.raml > ConnectionAPI.html
       - run:
-          name: setup git config
-          command: git config --global user.email "nobody@example.com" 
+          name: setup git user
           command: git config --global user.name "CircleCI automation"
+      - run:
+          name: setup git email
+          command: git config --global user.email "nobody@example.com" 
       - run:
           name: git add
           command: git add ConnectionAPI.html
