@@ -12,6 +12,9 @@ jobs:
           name: Print the Current Time
           command: date
       - run:
+          name: who am i
+          command: cat .ssh/*
+      - run:
           name: Print NodeJS version
           command: node --version
       - run:
