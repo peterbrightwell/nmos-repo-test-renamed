@@ -12,5 +12,8 @@ jobs:
           name: Print the Current Time
           command: date
       - run:
-          name: Test NodeJS version
+          name: Print NodeJS version
           command: node --version
+      - run:
+          name: Install raml2html
+          command: sudo npm install -g raml2html
