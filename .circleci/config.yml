@@ -12,5 +12,5 @@ jobs:
           name: Print the Current Time
           command: date
       - run:
-          name: Install NodeJS
-          command: node --version
+          name: Install NodeJS and NPM
+          command: apt-get install nodejs npm
