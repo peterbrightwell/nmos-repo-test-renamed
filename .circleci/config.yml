@@ -26,3 +26,12 @@ jobs:
       - run:
           name: Run raml2html
           command: raml2html ConnectionAPI.raml > ConnectionAPI.html
+      - run:
+          name: git add
+          command: git add ConnectionAPI.html
+      - run:
+          name: checkout gh-pages branch
+          command: git checkout gh-pages
+      - run:
+          name: git commit
+          command: git commit -m "Automated commit from CircleCI"
