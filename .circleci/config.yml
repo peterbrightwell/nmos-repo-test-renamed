@@ -6,22 +6,10 @@ jobs:
     steps:
       - checkout
       - run: git branch -r
-      - run:
-          name: who am i
-          command: cat ~/.ssh/id_rsa.pub
-      - run:
-          name: Print NodeJS version
-          command: node --version
-      - run:
-          name: Install raml2html
-          command: sudo npm install -g raml2html
-      - run:
-          name: Where is this running?
-          command: pwd
-      - run:
-          name: Get a dir
-          command: ls
-      - run:
+      - run: node --version
+      - run: sudo npm install -g raml2html
+      - run: pwd
+      - run: ls
           name: setup git user
           command: git config --global user.name "CircleCI automation"
       - run:
