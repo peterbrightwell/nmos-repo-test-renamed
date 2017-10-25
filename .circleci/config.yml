@@ -10,6 +10,7 @@ jobs:
       - run: sudo npm install -g raml2html
       - run: pwd
       - run: ls
+      - run: cp ConnectionAPI.raml /tmp/
       - run:
           name: setup git user
           command: git config --global user.name "CircleCI automation"
@@ -20,11 +21,9 @@ jobs:
           name: checkout gh-pages branch
           command: git checkout gh-pages
       - run: ls
-      - run: cat ConnectionAPI.raml
       - run:
           name: Run raml2html
-          command: raml2html ConnectionAPI.raml > ConnectionAPI.html
-      - run: cat ConnectionAPI.html
+          command: raml2html /tmp/ConnectionAPI.raml > ConnectionAPI.html
       - run:
           name: git add
           command: git add ConnectionAPI.html
