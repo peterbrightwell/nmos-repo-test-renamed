@@ -5,6 +5,7 @@ jobs:
       - image: circleci/node:4.8.2
     steps:
       - checkout
+      - run: git branch -r
       - run:
           name: Greeting
           command: echo Hello, world.
