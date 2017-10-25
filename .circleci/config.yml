@@ -39,11 +39,11 @@ jobs:
           name: git add
           command: git add ConnectionAPI.html
       - run:
-          name: checkout master branch (change back to gh-pages)
-          command: git checkout master
+          name: checkout gh-pages branch
+          command: git checkout gh-pages
       - run:
           name: git commit
           command: git commit -m "Automated commit from CircleCI"
       - run:
-          name: git push (change back to gh-pages)
-          command: git push origin master
+          name: git push
+          command: git push origin gh-pages
