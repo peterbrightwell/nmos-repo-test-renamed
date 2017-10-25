@@ -10,6 +10,7 @@ jobs:
       - run: sudo npm install -g raml2html
       - run: pwd
       - run: ls
+      - run:
           name: setup git user
           command: git config --global user.name "CircleCI automation"
       - run:
