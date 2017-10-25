@@ -45,5 +45,5 @@ jobs:
           name: git commit
           command: git commit -m "Automated commit from CircleCI"
       - run:
-          name: git push 
-          command: git push
+          name: git push (change back to gh-pages)
+          command: git push origin master
