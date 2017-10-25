@@ -35,6 +35,8 @@ jobs:
       - run:
           name: checkout gh-pages branch
           command: git checkout gh-pages
+      - run: ls
+      - run: cat ConnectionAPI.raml
       - run:
           name: Run raml2html
           command: raml2html ConnectionAPI.raml > ConnectionAPI.html
