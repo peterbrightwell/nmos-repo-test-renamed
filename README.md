@@ -1,8 +1,4 @@
-# nmos-repo-test
-Test repo for NMOS work
+# Documentation for nmos-repo-test
 
-Nothing to see here... just testing... NMOS repos are at https://github.com/AMWA-TV/
-
-Some more testing here...
-
-[docs/index.html]
+ - [CONTRIBUTING](CONTRIBUTING.md)
+ - [README](README.md)
