@@ -10,6 +10,12 @@
 
 [click here for docs/1.0\ Hello\ World.md](docs/1.0\ Hello\ World.md)
 
+[reference]
+
 [click here for docs/index.md](docs/index.md)
 
 [click here for docs/index.html](docs/index.html)
+
+[//]: # (References/Links)
+
+[reference]: docs/1.0%20Hello%20World.md
