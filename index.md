@@ -10,7 +10,9 @@
 
 [click here for docs/1.0\ Hello\ World.md](docs/1.0\ Hello\ World.md)
 
-[reference]
+[unescaped-reference]
+
+[escaped-reference]
 
 [click here for docs/index.md](docs/index.md)
 
@@ -18,4 +20,6 @@
 
 [//]: # (References/Links)
 
-[reference]: docs/1.0%20Hello%20World.md
+[unescaped-reference]: docs/1.0%20Hello%20World.md
+
+[escaped-reference]: docs/1.0%20Hello%20World.md
